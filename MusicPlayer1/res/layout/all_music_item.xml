@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/item_iv_xin"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/xin_off"
+        android:scaleType="center"/>
+
+    <ImageView
+        android:id="@+id/item_iv_tab"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/item_iv_xin"
+        android:src="@drawable/all_tab" 
+        android:scaleType="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/item_iv_tab"
+        android:orientation="vertical" 
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/item_tv_music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="歌名" 
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/item_tv_music_artist"
+            android:layout_width="wrap_content"
+             android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="歌手"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+</RelativeLayout>
